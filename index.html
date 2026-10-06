@@ -86,13 +86,29 @@ footer:before{content:"";position:absolute;left:0;right:0;top:0;height:1px;backg
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero .btn.primary{animation:none}.episode,.episode img,.btn,.platform-card{transition:none!important}}
 
+/* ===== Final visual cleanup — Latest Episode + Meet The Host remain unchanged ===== */
+#episodes{padding-top:76px;padding-bottom:76px}
+#episodes .section-head:first-child{margin-bottom:24px;padding-bottom:16px}
+#episodes .section-head:first-child p{max-width:420px;color:#b5bcb6;font-size:15px;line-height:1.55}
+#episodes .episode-grid{margin-top:28px}
+#listen{border-top:1px solid rgba(120,255,0,.24)}
+footer .foot{min-height:76px}
+@media(max-width:540px){
+ #episodes{padding-top:52px;padding-bottom:54px}
+ #episodes .section-head:first-child{gap:10px;margin-bottom:20px;padding-bottom:14px}
+ #episodes .section-head:first-child p{font-size:14px;line-height:1.5}
+ #episodes .episode-grid{margin-top:18px}
+ #listen{margin-top:0}
+ footer .foot{min-height:0}
+}
+
 </style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#top">GYATT</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button><nav class="navlinks"><a href="#episodes">EPISODES</a><a href="#about">ABOUT</a><a href="#listen">LISTEN / WATCH</a></nav></div></header>
 <main id="top">
 <section class="hero"><div class="hero-inner"><div class="eyebrow">THE WORLD'S FIRST GYATT FORTNITE PODCAST</div><h1>FORTNITE HAS A <span>PODCAST</span> PROBLEM.</h1><p>Good thing we landed first. Get Your Ass To This Fortnite Podcast.</p><div class="buttons"><a class="btn primary" href="#episodes">Latest episode</a><a class="btn" href="#about">Meet the host</a></div></div></section>
-<section id="episodes"><div class="wrap"><div class="section-head"><div><div class="kicker">Latest drop</div><h2>Episodes</h2></div><p>No stock thumbnails. No fake artwork. These are the actual GYATT episode covers.</p></div>
+<section id="episodes"><div class="wrap"><div class="section-head"><div><div class="kicker">Latest drop</div><h2>Episodes</h2></div><p>Four drops. Four different ways to look at Fortnite. Start with the latest, then keep the bus moving.</p></div>
 <article class="featured"><div class="featured-art"><img src="images/episode-39.jpg" alt="GYATT Fortnite Podcast Episode 39 Who's The Villain cover"></div><div class="featured-copy"><div class="tag">Episode 39 • Latest episode</div><h3>WHO'S THE VILLAIN?</h3><p>Fortnite loves heroes, villains, redemption arcs and chaos. Episode 39 asks the uncomfortable question: when everybody thinks they're the hero of the match, who's actually the villain?</p><a class="btn primary" href="#listen">Listen / Watch</a></div></article>
 <div class="episode-grid">
 <a class="episode" href="#listen"><img src="images/episode-38.jpg" alt="Episode 38 Fortnite EDC cover"><div class="episode-body"><div class="episode-no">EPISODE 38</div><h3>Fortnite EDC</h3></div></a>
