@@ -59,6 +59,33 @@ footer{background:#030403;border-top:1px solid rgba(120,255,0,.22);padding:42px 
  #listen{padding:72px 0 66px}#listen:before{font-size:42vw;top:36px}.listen-copy h2{font-size:51px;letter-spacing:-2.5px}.listen-copy p{font-size:15px}.platform-grid{margin-top:28px;gap:10px}.platform-card{min-height:78px;padding:13px 14px}.platform-mark{width:46px;height:46px;flex-basis:46px;border-radius:10px}.platform-card strong{font-size:17px}.foot{gap:22px}.footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}.copyright{width:100%;padding-top:18px;border-top:1px solid #181d19}
 }
 
+
+/* ===== Final finish pass: locked Latest Episode + Meet The Host untouched ===== */
+@keyframes gyattGlow{0%,100%{box-shadow:0 0 0 rgba(120,255,0,0)}50%{box-shadow:0 0 34px rgba(120,255,0,.11)}}
+.hero .btn.primary{animation:gyattGlow 3.6s ease-in-out infinite}
+.hero .btn,.platform-card,.footer-nav a{transition:transform .2s ease,border-color .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease}
+#episodes .episode-grid{position:relative}
+#listen{padding:104px 0 96px}
+#listen:after{content:"LOAD THE BUS • FULL SEND • REBOOT ME • GYATT •";position:absolute;left:0;right:0;bottom:0;height:36px;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;color:rgba(120,255,0,.42);border-top:1px solid rgba(120,255,0,.12);font-size:10px;font-weight:1000;letter-spacing:4px;background:#030503}
+.platform-card{position:relative;overflow:hidden;border-color:#384138}
+.platform-card:after{content:"→";position:absolute;right:18px;font-size:20px;color:var(--green);opacity:.8}
+.platform-card:hover{transform:translateY(-3px);border-color:var(--green);box-shadow:0 16px 40px rgba(0,0,0,.3),0 0 24px rgba(120,255,0,.08)}
+.platform-card:nth-child(2) .platform-mark{background:#fff;color:#080808}.platform-card:nth-child(3) .platform-mark{background:#f5a623;color:#080808}
+footer{position:relative;padding:52px 0 46px;background:linear-gradient(180deg,#030403,#010201)}
+footer:before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:.6}
+.footer-brand strong{font-style:italic;text-shadow:0 0 20px rgba(120,255,0,.25)}
+.footer-brand span{font-size:12px;letter-spacing:.7px}.footer-nav a{padding:8px 0}.footer-nav a:hover{transform:translateY(-1px)}
+@media(max-width:540px){
+ #episodes .section-head:nth-of-type(2){margin-bottom:18px}
+ #episodes .episode-grid{padding-bottom:26px}
+ #episodes .episode-grid:before{content:"SWIPE EPISODES  →";position:absolute;left:12px;bottom:3px;color:#758075;font-size:9px;font-weight:900;letter-spacing:1.8px;pointer-events:none}
+ #listen{padding:76px 0 88px}
+ #listen:after{height:32px;font-size:9px;letter-spacing:2.6px;justify-content:flex-start;padding-left:18px}
+ .platform-card{border-radius:8px}.platform-card:after{right:16px}
+ footer{padding:44px 0 38px}.footer-brand strong{font-size:22px}.footer-brand span{line-height:1.5}.footer-nav a{padding:6px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero .btn.primary{animation:none}.episode,.episode img,.btn,.platform-card{transition:none!important}}
+
 </style>
 </head>
 <body>
