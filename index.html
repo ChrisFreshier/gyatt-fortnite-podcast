@@ -1,76 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GYATT Fortnite Podcast</title>
-
-  <style>
-    body {
-      margin: 0;
-      background: #050709;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      box-sizing: border-box;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(70px, 18vw, 180px);
-      line-height: .8;
-      color: #7CFF00;
-      text-shadow: 0 0 30px rgba(124,255,0,.35);
-    }
-
-    h2 {
-      margin: 20px 0;
-      font-size: clamp(25px, 6vw, 55px);
-    }
-
-    p {
-      color: #aaa;
-      font-size: 20px;
-    }
-
-    .badge {
-      margin-bottom: 25px;
-      border: 1px solid #7CFF00;
-      color: #7CFF00;
-      padding: 10px 18px;
-      border-radius: 100px;
-      letter-spacing: 2px;
-      font-size: 12px;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GYATT Fortnite Podcast</title>
+<meta name="description" content="The home of the GYATT Fortnite Podcast — Fortnite conversation, episodes, videos and more with Chris Freshier.">
+<style>
+:root{--green:#86ff16;--green2:#b7ff53;--ink:#050707;--panel:#0b0e0e;--muted:#a9b0ad;--line:#202726;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:fixed;z-index:20;inset:0 0 auto;background:linear-gradient(#050707f5,#050707a8,transparent);backdrop-filter:blur(8px)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}.wordmark{font-size:30px;font-weight:1000;letter-spacing:-2px;color:var(--green);text-shadow:0 0 18px #86ff1660}.links{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase}.links a:hover{color:var(--green)}.listen{background:var(--green);color:#050707!important;padding:13px 20px;border-radius:4px;box-shadow:0 0 26px #86ff1640}.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{min-height:760px;position:relative;display:grid;place-items:center;text-align:center;padding:120px 0 80px;background:radial-gradient(circle at 50% 43%,#14230e80,transparent 37%),linear-gradient(180deg,#05070722 0,#05070775 68%,#050707 100%),url('images/gyatt-logo.jpg') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050707d8 0,transparent 25%,transparent 75%,#050707d8 100%);pointer-events:none}.hero-content{position:relative;z-index:2;max-width:900px}.eyebrow{color:var(--green);font-weight:1000;letter-spacing:4px;font-size:13px;text-transform:uppercase;margin-bottom:370px;text-shadow:0 0 14px #000}.hero h1{font-size:clamp(38px,6vw,78px);line-height:.95;margin:0 0 15px;text-transform:uppercase;letter-spacing:-3px;text-shadow:0 4px 24px #000}.hero p{font-size:clamp(17px,2vw,22px);color:#d9dddb;margin:0 auto 28px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border:1px solid var(--green);font-size:13px;font-weight:1000;letter-spacing:1.4px;text-transform:uppercase}.btn.primary{background:var(--green);color:#050707;box-shadow:0 0 25px #86ff1635}.btn:hover{transform:translateY(-2px)}
+section{padding:92px 0;border-top:1px solid #111}.section-kicker{color:var(--green);font-weight:1000;letter-spacing:3px;text-transform:uppercase;font-size:12px}.section-title{font-size:clamp(38px,6vw,70px);line-height:.92;text-transform:uppercase;letter-spacing:-3px;margin:10px 0 28px}.latest-grid{display:grid;grid-template-columns:minmax(280px,520px) 1fr;gap:65px;align-items:center}.cover{width:100%;display:block;border-radius:7px;box-shadow:0 24px 80px #000,0 0 50px #86ff1612}.episode-no{font-size:13px;color:var(--green);font-weight:1000;letter-spacing:3px}.latest h2{font-size:clamp(42px,6vw,72px);line-height:.9;text-transform:uppercase;letter-spacing:-3px;margin:12px 0 20px}.copy{color:#b9c0bd;font-size:18px;line-height:1.7;max-width:620px}.platforms{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.pill{border:1px solid #333;padding:11px 15px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.pill:hover{border-color:var(--green);color:var(--green)}
+.episodes{background:#080a0a}.episode-shell{border:1px solid var(--line);padding:26px;border-radius:8px;background:linear-gradient(145deg,#0e1111,#080a0a)}.episode-note{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:center}.episode-note img{width:150px;border-radius:5px}.episode-note h3{margin:0 0 7px;font-size:25px;text-transform:uppercase}.episode-note p{margin:0;color:var(--muted);line-height:1.55}.archive-coming{margin-top:22px;color:#6f7773;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.portrait-wrap{position:relative}.portrait-wrap:before{content:"";position:absolute;inset:-12px 12px 12px -12px;border:1px solid var(--green);z-index:0}.portrait{position:relative;z-index:1;width:100%;max-height:610px;object-fit:cover;display:block}.about h2{font-size:clamp(42px,6vw,74px);line-height:.9;text-transform:uppercase;letter-spacing:-3px;margin:10px 0 22px}.quote{font-size:23px;font-weight:800;line-height:1.35;margin:25px 0;color:#e8ebe9}
+.watch{background:linear-gradient(135deg,#0a0d0d,#10190b)}.watch-box{display:grid;grid-template-columns:1fr auto;gap:35px;align-items:center;border:1px solid #263022;padding:40px;border-radius:8px}.watch h2{font-size:clamp(38px,5vw,62px);margin:7px 0 10px;text-transform:uppercase;letter-spacing:-2px}.watch p{color:var(--muted);margin:0;line-height:1.6}
+footer{padding:55px 0 80px;border-top:1px solid var(--line);color:#818985}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.footer-brand{font-size:32px;font-weight:1000;color:var(--green);letter-spacing:-2px}.disclaimer{font-size:11px;line-height:1.5;max-width:680px;margin-top:14px}.copyright{font-size:11px;text-align:right}
+@media(max-width:760px){.wrap{width:min(100% - 28px,var(--max))}nav{height:66px}.wordmark{font-size:25px}.links{display:none;position:absolute;top:66px;left:0;right:0;background:#080a0af7;padding:25px 20px;flex-direction:column;align-items:stretch;border-top:1px solid #222}.links.open{display:flex}.menu{display:block}.hero{min-height:670px;padding-top:95px;background-position:center}.hero:after{background:linear-gradient(180deg,#05070755,#05070725 45%,#050707 100%)}.eyebrow{margin-bottom:330px;font-size:10px;letter-spacing:2.5px}.hero h1{font-size:44px;letter-spacing:-2px}.hero p{font-size:16px}.btn{width:100%}section{padding:68px 0}.latest-grid,.about-grid,.watch-box{grid-template-columns:1fr;gap:35px}.latest-grid{gap:38px}.latest h2{font-size:47px}.section-title{font-size:47px}.episode-note{grid-template-columns:95px 1fr;gap:16px}.episode-note img{width:95px}.episode-note h3{font-size:18px}.episode-note p{font-size:14px}.portrait{max-height:520px}.about-grid{display:flex;flex-direction:column}.watch-box{padding:28px}.footer-grid{display:block}.copyright{text-align:left;margin-top:28px}}
+</style>
 </head>
-
 <body>
-
-  <section class="hero">
-
-    <div class="badge">
-      THE WORLD'S FIRST GYATT FORTNITE PODCAST
-    </div>
-
-    <h1>GYATT</h1>
-
-    <h2>FORTNITE PODCAST</h2>
-
-    <p>Get Your Ass To This Fortnite Podcast.</p>
-
-    <p>Full website coming soon.</p>
-
-  </section>
-
-</body>
-</html>
+<header><div class="wrap"><nav><a class="wordmark" href="#top">GYATT</a><div class="links" id="links"><a href="#episodes">Episodes</a><a href="#about">About</a><a href="#watch">Watch</a><a class="listen" href="#latest">Listen</a></div><button class="menu" id="menu" aria-label="Open menu">☰</button></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-content"><div class="eyebrow">The world's first GYATT Fortnite Podcast</div><h1>Fortnite has a podcast problem.</h1><p>Good thing we landed first. Get Your Ass To This Fortnite Podcast.</p><div class="actions"><a class="btn primary" href="#latest">Listen to the latest episode</a><a class="btn" href="#watch">Watch GYATT</a></div></div></section>
+<section class="latest" id="latest"><div class="wrap latest-grid"><img class="cover" src="images/episode-39.jpg" alt="GYATT Fortnite Podcast Episode 39 Who's The Villain cover"><div><div class="episode-no">LATEST DROP · EPISODE 39</div><h2>Who's The Villain?</h2><p class="copy">Every Fortnite match needs somebody to blame. Episode 39 turns the mirror around and asks a more uncomfortable question: what if the villain in somebody else's match is you?</p><div class="platforms"><a class="pill" href="#listen-links">Listen Now</a><a class="pill" href="#watch">Watch</a></div></div></div></section>
+<section class="episodes" id="episodes"><div class="wrap"><div class="section-kicker">The archive</div><h2 class="section-title">Every episode has its own identity.</h2><div class="episode-shell"><div class="episode-note"><img src="images/episode-39.jpg" alt="Episode 39 cover"><div><h3>Real covers. No fake thumbnails.</h3><p>The archive is designed around the actual square artwork created for each GYATT episode. As your previous covers are added, this becomes the full visual history of the show.</p></div></div><div class="archive-coming">Episode archive · expanding with your original cover art</div></div></div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div class="portrait-wrap"><img class="portrait" src="images/chris-freshier.jpg" alt="Chris Freshier, host of the GYATT Fortnite Podcast"></div><div><div class="section-kicker">Meet the host</div><h2>Chris Freshier</h2><p class="quote">Default skin and host of the GYATT Fortnite Podcast, Chris Freshier to the rescue.</p><p class="copy">GYATT is a Fortnite show built around the stuff that happens between the patch notes: the ridiculous matches, the arguments, the unwritten rules, the stories and the moments that make you load the bus one more time.</p></div></div></section>
+<section class="watch" id="watch"><div class="wrap"><div class="watch-box"><div><div class="section-kicker">Watch GYATT</div><h2>The podcast doesn't stop at audio.</h2><p>Clips, videos, streaming moments and longer GYATT content will live here. We’ll connect the real YouTube, Twitch and Kick destinations when we add your platform links.</p></div><a class="btn primary" href="#">Watch GYATT</a></div></div></section>
+</main>
+<footer id="listen-links"><div class="wrap footer-grid"><div><div class="footer-brand">GYATT FORTNITE PODCAST</div><div class="disclaimer">Independent fan-created podcast and website. Not endorsed by or affiliated with Epic Games. Fortnite and related marks are property of their respective owners.</div></div><div class="copyright">© 2026 GYATT Fortnite Podcast<br>Built for the loopers.</div></div></footer>
+<script>const m=document.getElementById('menu'),l=document.getElementById('links');m.onclick=()=>l.classList.toggle('open');l.querySelectorAll('a').forEach(a=>a.onclick=()=>l.classList.remove('open'));</script>
+</body></html>
